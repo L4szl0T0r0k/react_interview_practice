@@ -11,6 +11,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.App {
+  display: flex;
+}
+
 .header {
   position: absolute;
   width: 377px;
@@ -32,15 +36,15 @@ body {
 
 .content {
   position: relative;
-  width: 887px;
+  min-width: 887px;
   height: 639px;
   background-color: #ffffff;
   margin: 334px 552px 405px 521px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 input {
-  margin: 77px 16px 55px 16px;
+  margin: 77px 16px 67px 16px;
   width: calc(100% - 32px);
   height: 50px;
   border-radius: 100px;
@@ -50,6 +54,12 @@ input {
 
 input[type=text] {
   padding-left: 16px;
+  padding-top: 3px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 ::placeholder {
@@ -57,7 +67,6 @@ input[type=text] {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.5px;
 }
 
 .users-container {
@@ -67,12 +76,13 @@ input[type=text] {
   font-size: 16px;
   line-height: 19px;
   color: black;
-  
 }
 
 .user-box {
-  width: calc(100% - 66px);
-  padding: 15px 0 15px 0;
-  margin: 0 auto;
-  border-bottom: 1px solid #E8E8E8;;
+  width: calc(100% - 67px);
+  height: 33px;
+  margin: 16px 33px;
+  border-bottom: 1px solid #E8E8E8;
 }
+
+

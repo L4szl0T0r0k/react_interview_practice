@@ -11,7 +11,7 @@ const Users = ({usersData, search, setSearch}) => {
         
         <div className='users-container'>
             {usersData.filter((item) => {
-              return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search)
+              return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search.toLowerCase())
             }).map((item, index) => (
               <div key={index} className='user-box' onClick={() => console.log(item.bio)}>
                   <p>{item.name}</p>
